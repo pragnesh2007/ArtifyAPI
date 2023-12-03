@@ -34,8 +34,8 @@ public class CheckoutController : ControllerBase
             PaymentMethodTypes = new List<string> { "card" },
             LineItems = lineItems,
             Mode = "payment",
-            SuccessUrl = "http://localhost:3000/success", // Replace with your success URL
-            CancelUrl = "http://localhost:3000/cancel"    // Replace with your cancel URL
+            SuccessUrl = "https://ecommerce-frontend-ui.azurewebsites.net/success", // Replace with your success URL
+            CancelUrl = "https://ecommerce-frontend-ui.azurewebsites.net/cancel"    // Replace with your cancel URL
         };
 
         var service = new SessionService();
